@@ -1,0 +1,75 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cover</title>
+  <body>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <script type="text/javascript">
+        function drawFace() {
+            let canvas = document.getElementById('canvas');
+            if (canvas.getContext) {
+                let ctx = canvas.getContext('2d');
+
+                ctx.beginPath();
+                ctx.arc(75,175,50,0,Math.PI*2,true); 
+                ctx.moveTo(110,175);
+                ctx.arc(75,175,35,0,Math.PI,false);  
+                ctx.moveTo(65,165);
+                ctx.arc(60,165,5,0,Math.PI*2,true);  
+                ctx.moveTo(95,165);
+                ctx.arc(90,165,5,0,Math.PI*2,true);  
+                ctx.stroke();
+            }
+        }
+
+        function drawMessage() {
+            let canvas = document.getElementById('canvas');
+            if (canvas.getContext) {
+                let ctx = canvas.getContext('2d');
+                
+                ctx.beginPath();
+                ctx.moveTo(125,25);
+                ctx.quadraticCurveTo(75,25,75,62);
+                ctx.quadraticCurveTo(75,100,130,100);
+                ctx.quadraticCurveTo(100,120,80,125);
+                ctx.quadraticCurveTo(110,120,170,100);
+                ctx.quadraticCurveTo(220,100,210,62);
+                ctx.quadraticCurveTo(220,25,125,25);
+                ctx.stroke();
+            }
+        }
+
+        function drawD() {
+            let canvas = document.getElementById('canvas');
+            if (canvas.getContext) {
+                let ctx = canvas.getContext('2d');
+
+                ctx.beginPath();
+                ctx.moveTo(100,35);
+                ctx.arc(100,60,25,Math.PI/2,Math.PI*3/2,true);
+                ctx.stroke();
+            }
+        }
+
+        function drawA() {
+            let canvas = document.getElementById('canvas');
+            if (canvas.getContext) {
+                let ctx = canvas.getContext('2d');
+
+                ctx.beginPath();
+                ctx.moveTo(140,85);
+                ctx.lineTo(170,35);
+                ctx.lineTo(200,85);
+                ctx.moveTo(150,70);
+                ctx.lineTo(190,70);
+                ctx.stroke();
+            }
+        }
+
+        drawFace();
+        drawMessage();
+        drawD();
+        drawA();
+    </script>
+  </body>
