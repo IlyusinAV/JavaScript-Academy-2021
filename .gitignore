@@ -3,3 +3,7 @@
 
 # Ignore images
 img/
+
+# Ignore archives
+*.zip
+*.7z
