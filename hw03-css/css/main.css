@@ -1,0 +1,46 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.Header {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#hamburger {
+  width: 24px;
+  height: 24px;
+  background: url(../img/hamburger.svg) no-repeat;
+  background-position: 0px 0px;
+  display: inline-block;
+}
+
+.Logo {
+  display: flex;
+  justify-content: center;
+}
+
+.Search_string {
+  display: flex;
+  justify-content: center;
+}
+
+.Buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.Message {
+  display: flex;
+  justify-content: center;
+}
+
+#search_string {
+  border: none;
+}
+
+.Footer {
+  display: flex;
+  justify-content: center;
+}
