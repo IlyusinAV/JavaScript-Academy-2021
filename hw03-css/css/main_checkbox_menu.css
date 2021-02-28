@@ -45,6 +45,7 @@ img {
 }
 
 .header-menu {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -70,8 +71,7 @@ img {
   margin-right: 25px;
 }
 
-.header-menu #hamburger {
-  position: relative;
+.header-menu .hamburger-label {
   height: 24px;
   width: 24px;
   background-size: 24px;
@@ -81,10 +81,34 @@ img {
   margin-right: 25px;
   cursor: pointer;
 }
-
-.header-menu #hamburger:hover,
-.header-menu #hamburger.is-active {
+.header-menu .hamburger-label:hover,
+.header-menu .hamburger-label.is-active {
   opacity: 1;
+}
+
+.header-menu #hamburger {
+  position: absolute;
+  left: -100vw;
+  /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead.
+   It can be better for accessibilty on some touch devices for discoverability. */
+}
+.header-menu #hamburger:checked ~ #services_window {
+  display: block;
+}
+
+.header-menu #hamburger:checked ~ .full-page-hover {
+  background: gray;
+  opacity: 0%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.header-menu #hamburger:not(:checked) ~ .full-page-hover {
+  display: none;
 }
 
 .header-menu .avatar img {
@@ -136,8 +160,7 @@ img {
   border: none;
   font-size: 16px;
 }
-
-.search-box__voice {
+.search-box > .search-box__input::after {
   content: "";
   background-position: center;
   background-repeat: no-repeat;
@@ -230,14 +253,15 @@ img {
 /* ================================================== services_window ================================================== */
 #services_window {
   position: absolute;
-  top: 40px;
-  right: -60px;
+  top: 60px;
+  right: 30px;
   width: 330px;
   display: none;
   border-radius: 10px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
   border: 1px solid #cccccc;
+  z-index: 2;
 }
 
 #services_window .scroll {
