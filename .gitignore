@@ -7,3 +7,12 @@ img/
 # Ignore archives
 *.zip
 *.7z
+
+# Ignore Node modules
+node-modules
+
+# Ignore bundles
+dist/
+
+# Ignore cache
+.cache/
