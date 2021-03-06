@@ -25,7 +25,7 @@
       </nav>
     </header>
     <div class="Slider">
-      <img src="./src/img/top-slide.jpg" class="Slider__item"/>
+      <img class="Slider__item" src="./src/img/top-slide.jpg"/>
     </div>
   </div>
   <main class="MainContainer">
@@ -35,10 +35,18 @@
         <p class="WhyWe__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </section>
       <section class="Partners">
-        <img src="./src/img/top-slide.jpg" class="Partners__item"/>
-        <img src="./src/img/sponsors.jpg" class="Partners__item"/>
-        <img src="./src/img/sponsors.jpg" class="Partners__item"/>
-        <img src="./src/img/sponsors.jpg" class="Partners__item"/>
+        <div class="Partners__item">
+          <img class="Partners__item-img" src="./src/img/sponsors.jpg"/>
+        </div>
+        <div class="Partners__item">
+          <img class="Partners__item-img" src="./src/img/sponsors.jpg"/>
+        </div>
+        <div class="Partners__item">
+          <img class="Partners__item-img" src="./src/img/sponsors.jpg"/>
+        </div>
+        <div class="Partners__item">
+          <img class="Partners__item-img" src="./src/img/sponsors.jpg"/>
+        </div>
       </section>
       <section class="Proposals">
         <article class="Proposals__item">
@@ -70,7 +78,37 @@
           </div>
         </article>
       </section>
+      <section class="Articles">
+        <article class="Articles__item">
+          <img class="Articles__item-img" src="./src/img/top-slide.jpg"/>
+          <div class="Articles__item-content">
+            <h1 class="Articles__item-title">Lorem ipsum dolor sit amet</h1>
+            <p class="Articles__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+        </article>
+        <article class="Articles__item">
+          <img class="Articles__item-img" src="./src/img/top-slide.jpg"/>
+          <div class="Articles__item-content">
+            <h1 class="Articles__item-title">Lorem ipsum dolor sit amet</h1>
+            <p class="Articles__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+        </article>
+        <article class="Articles__item">
+          <img class="Articles__item-img" src="./src/img/top-slide.jpg"/>
+          <div class="Articles__item-content">
+            <h1 class="Articles__item-title">Lorem ipsum dolor sit amet</h1>
+            <p class="Articles__item-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+          </div>
+        </article>
+      </section>
     </section>
+    <aside class="FormWrapper">
+      <form class="FormWrapper__form">
+        <label class="FormWrapper__form-label">Tel number:</label>
+        <input class="FormWrapper__form-input" type="tel" placeholder="Tel:"/>
+        <button class="FormWrapper__form-btn">Call Me</button>
+      </form>
+    </aside>
   </main>
   <footer class="Footer">
     <div class="Footer__copy">@JS Academy 2021</div>
