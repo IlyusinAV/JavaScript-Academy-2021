@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  &__logo {
+    position: relative;
+    justify-content: flex-start;
+  }
+
+  &__logo-img {
+    width: 38px;
+    height: 40px;
+  }
+
+  &__logo-text {
+    color: $white;
+  }
+
+  &__container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    line-height: 30px;
+  }
+
+  &__navigation-item {
+    display: inline-block;
+
+    & a {
+      text-decoration: none;
+      font-size: 20px;
+      color: $white;
+    }
+  }
+}
