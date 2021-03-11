@@ -1,0 +1,80 @@
+.proposals {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 30%;
+    min-width: 370px;
+    height: 515px;
+    background: $white;
+    margin-right: 15px;
+    justify-content: center;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+
+  &__item-img {
+    display: block;
+    height: 130px;
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+  }
+
+  &__item-title {
+    display: block;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    color: $secondary;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  &__item-text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    color: $devil;
+  }
+
+  &__item-button {
+    display: block;
+    width: 163px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    border-radius: 28px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+
+    &--inactive {
+      color: $primary;
+      background-color: $white;
+      border: 2px solid $primary;
+      box-sizing: border-box;
+    }
+
+    &--active {
+      color: $white;
+      background-color: $primary;
+      border: 0;
+    }
+  }
+}
